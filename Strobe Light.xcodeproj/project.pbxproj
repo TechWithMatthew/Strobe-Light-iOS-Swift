@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D61722A31C94E87400FE9985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722A21C94E87400FE9985 /* AppDelegate.swift */; };
+		D61722A51C94E87400FE9985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722A41C94E87400FE9985 /* ViewController.swift */; };
+		D61722A81C94E87400FE9985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61722A61C94E87400FE9985 /* Main.storyboard */; };
+		D61722AA1C94E87400FE9985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61722A91C94E87400FE9985 /* Assets.xcassets */; };
+		D61722AD1C94E87400FE9985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61722AB1C94E87400FE9985 /* LaunchScreen.storyboard */; };
+		D61722B81C94E87400FE9985 /* Strobe_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722B71C94E87400FE9985 /* Strobe_LightTests.swift */; };
+		D61722C31C94E87400FE9985 /* Strobe_LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722C21C94E87400FE9985 /* Strobe_LightUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D61722B41C94E87400FE9985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61722971C94E87400FE9985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D617229E1C94E87400FE9985;
+			remoteInfo = "Strobe Light";
+		};
+		D61722BF1C94E87400FE9985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61722971C94E87400FE9985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D617229E1C94E87400FE9985;
+			remoteInfo = "Strobe Light";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D617229F1C94E87400FE9985 /* Strobe Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strobe Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61722A21C94E87400FE9985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D61722A41C94E87400FE9985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D61722A71C94E87400FE9985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D61722A91C94E87400FE9985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D61722AC1C94E87400FE9985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D61722AE1C94E87400FE9985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61722B31C94E87400FE9985 /* Strobe LightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strobe LightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61722B71C94E87400FE9985 /* Strobe_LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strobe_LightTests.swift; sourceTree = "<group>"; };
+		D61722B91C94E87400FE9985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61722BE1C94E87400FE9985 /* Strobe LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strobe LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61722C21C94E87400FE9985 /* Strobe_LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strobe_LightUITests.swift; sourceTree = "<group>"; };
+		D61722C41C94E87400FE9985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D617229C1C94E87400FE9985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61722B01C94E87400FE9985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61722BB1C94E87400FE9985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D61722961C94E87400FE9985 = {
+			isa = PBXGroup;
+			children = (
+				D61722A11C94E87400FE9985 /* Strobe Light */,
+				D61722B61C94E87400FE9985 /* Strobe LightTests */,
+				D61722C11C94E87400FE9985 /* Strobe LightUITests */,
+				D61722A01C94E87400FE9985 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D61722A01C94E87400FE9985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D617229F1C94E87400FE9985 /* Strobe Light.app */,
+				D61722B31C94E87400FE9985 /* Strobe LightTests.xctest */,
+				D61722BE1C94E87400FE9985 /* Strobe LightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D61722A11C94E87400FE9985 /* Strobe Light */ = {
+			isa = PBXGroup;
+			children = (
+				D61722A21C94E87400FE9985 /* AppDelegate.swift */,
+				D61722A41C94E87400FE9985 /* ViewController.swift */,
+				D61722A61C94E87400FE9985 /* Main.storyboard */,
+				D61722A91C94E87400FE9985 /* Assets.xcassets */,
+				D61722AB1C94E87400FE9985 /* LaunchScreen.storyboard */,
+				D61722AE1C94E87400FE9985 /* Info.plist */,
+			);
+			path = "Strobe Light";
+			sourceTree = "<group>";
+		};
+		D61722B61C94E87400FE9985 /* Strobe LightTests */ = {
+			isa = PBXGroup;
+			children = (
+				D61722B71C94E87400FE9985 /* Strobe_LightTests.swift */,
+				D61722B91C94E87400FE9985 /* Info.plist */,
+			);
+			path = "Strobe LightTests";
+			sourceTree = "<group>";
+		};
+		D61722C11C94E87400FE9985 /* Strobe LightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D61722C21C94E87400FE9985 /* Strobe_LightUITests.swift */,
+				D61722C41C94E87400FE9985 /* Info.plist */,
+			);
+			path = "Strobe LightUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D617229E1C94E87400FE9985 /* Strobe Light */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61722C71C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe Light" */;
+			buildPhases = (
+				D617229B1C94E87400FE9985 /* Sources */,
+				D617229C1C94E87400FE9985 /* Frameworks */,
+				D617229D1C94E87400FE9985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Strobe Light";
+			productName = "Strobe Light";
+			productReference = D617229F1C94E87400FE9985 /* Strobe Light.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D61722B21C94E87400FE9985 /* Strobe LightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61722CA1C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe LightTests" */;
+			buildPhases = (
+				D61722AF1C94E87400FE9985 /* Sources */,
+				D61722B01C94E87400FE9985 /* Frameworks */,
+				D61722B11C94E87400FE9985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61722B51C94E87400FE9985 /* PBXTargetDependency */,
+			);
+			name = "Strobe LightTests";
+			productName = "Strobe LightTests";
+			productReference = D61722B31C94E87400FE9985 /* Strobe LightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D61722BD1C94E87400FE9985 /* Strobe LightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61722CD1C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe LightUITests" */;
+			buildPhases = (
+				D61722BA1C94E87400FE9985 /* Sources */,
+				D61722BB1C94E87400FE9985 /* Frameworks */,
+				D61722BC1C94E87400FE9985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D61722C01C94E87400FE9985 /* PBXTargetDependency */,
+			);
+			name = "Strobe LightUITests";
+			productName = "Strobe LightUITests";
+			productReference = D61722BE1C94E87400FE9985 /* Strobe LightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D61722971C94E87400FE9985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Matthew Purcell";
+				TargetAttributes = {
+					D617229E1C94E87400FE9985 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UNEZK3RXDZ;
+					};
+					D61722B21C94E87400FE9985 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UNEZK3RXDZ;
+						TestTargetID = D617229E1C94E87400FE9985;
+					};
+					D61722BD1C94E87400FE9985 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UNEZK3RXDZ;
+						TestTargetID = D617229E1C94E87400FE9985;
+					};
+				};
+			};
+			buildConfigurationList = D617229A1C94E87400FE9985 /* Build configuration list for PBXProject "Strobe Light" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D61722961C94E87400FE9985;
+			productRefGroup = D61722A01C94E87400FE9985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D617229E1C94E87400FE9985 /* Strobe Light */,
+				D61722B21C94E87400FE9985 /* Strobe LightTests */,
+				D61722BD1C94E87400FE9985 /* Strobe LightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D617229D1C94E87400FE9985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61722AD1C94E87400FE9985 /* LaunchScreen.storyboard in Resources */,
+				D61722AA1C94E87400FE9985 /* Assets.xcassets in Resources */,
+				D61722A81C94E87400FE9985 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61722B11C94E87400FE9985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61722BC1C94E87400FE9985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D617229B1C94E87400FE9985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61722A51C94E87400FE9985 /* ViewController.swift in Sources */,
+				D61722A31C94E87400FE9985 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61722AF1C94E87400FE9985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61722B81C94E87400FE9985 /* Strobe_LightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61722BA1C94E87400FE9985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61722C31C94E87400FE9985 /* Strobe_LightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D61722B51C94E87400FE9985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D617229E1C94E87400FE9985 /* Strobe Light */;
+			targetProxy = D61722B41C94E87400FE9985 /* PBXContainerItemProxy */;
+		};
+		D61722C01C94E87400FE9985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D617229E1C94E87400FE9985 /* Strobe Light */;
+			targetProxy = D61722BF1C94E87400FE9985 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D61722A61C94E87400FE9985 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61722A71C94E87400FE9985 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D61722AB1C94E87400FE9985 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61722AC1C94E87400FE9985 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D61722C51C94E87400FE9985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D61722C61C94E87400FE9985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D61722C81C94E87400FE9985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Strobe Light/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D61722C91C94E87400FE9985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Strobe Light/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D61722CB1C94E87400FE9985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Strobe LightTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-LightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strobe Light.app/Strobe Light";
+			};
+			name = Debug;
+		};
+		D61722CC1C94E87400FE9985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Strobe LightTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-LightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strobe Light.app/Strobe Light";
+			};
+			name = Release;
+		};
+		D61722CE1C94E87400FE9985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Strobe LightUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-LightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Strobe Light";
+			};
+			name = Debug;
+		};
+		D61722CF1C94E87400FE9985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Strobe LightUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-LightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Strobe Light";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D617229A1C94E87400FE9985 /* Build configuration list for PBXProject "Strobe Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61722C51C94E87400FE9985 /* Debug */,
+				D61722C61C94E87400FE9985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D61722C71C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61722C81C94E87400FE9985 /* Debug */,
+				D61722C91C94E87400FE9985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D61722CA1C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe LightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61722CB1C94E87400FE9985 /* Debug */,
+				D61722CC1C94E87400FE9985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D61722CD1C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe LightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61722CE1C94E87400FE9985 /* Debug */,
+				D61722CF1C94E87400FE9985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D61722971C94E87400FE9985 /* Project object */;
+}
