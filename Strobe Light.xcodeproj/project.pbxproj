@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D610FEF71C978ED90007A294 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610FEF61C978ED90007A294 /* secondViewController.swift */; };
 		D61722A31C94E87400FE9985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722A21C94E87400FE9985 /* AppDelegate.swift */; };
 		D61722A51C94E87400FE9985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722A41C94E87400FE9985 /* ViewController.swift */; };
 		D61722A81C94E87400FE9985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61722A61C94E87400FE9985 /* Main.storyboard */; };
@@ -14,6 +15,14 @@
 		D61722AD1C94E87400FE9985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61722AB1C94E87400FE9985 /* LaunchScreen.storyboard */; };
 		D61722B81C94E87400FE9985 /* Strobe_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722B71C94E87400FE9985 /* Strobe_LightTests.swift */; };
 		D61722C31C94E87400FE9985 /* Strobe_LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61722C21C94E87400FE9985 /* Strobe_LightUITests.swift */; };
+		D6D33C3D1C9E590B0087B40B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D33C3B1C9E590B0087B40B /* Interface.storyboard */; };
+		D6D33C3F1C9E590B0087B40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D33C3E1C9E590B0087B40B /* Assets.xcassets */; };
+		D6D33C461C9E590B0087B40B /* watchLight Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D6D33C451C9E590B0087B40B /* watchLight Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6D33C4B1C9E590B0087B40B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D33C4A1C9E590B0087B40B /* InterfaceController.swift */; };
+		D6D33C4D1C9E590B0087B40B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D33C4C1C9E590B0087B40B /* ExtensionDelegate.swift */; };
+		D6D33C4F1C9E590B0087B40B /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D33C4E1C9E590B0087B40B /* GlanceController.swift */; };
+		D6D33C511C9E590B0087B40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D33C501C9E590B0087B40B /* Assets.xcassets */; };
+		D6D33C551C9E590B0087B40B /* watchLight.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6D33C391C9E590B0087B40B /* watchLight.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +40,49 @@
 			remoteGlobalIDString = D617229E1C94E87400FE9985;
 			remoteInfo = "Strobe Light";
 		};
+		D6D33C471C9E590B0087B40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61722971C94E87400FE9985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6D33C441C9E590B0087B40B;
+			remoteInfo = "watchLight Extension";
+		};
+		D6D33C531C9E590B0087B40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D61722971C94E87400FE9985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6D33C381C9E590B0087B40B;
+			remoteInfo = watchLight;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D6D33C5B1C9E590B0087B40B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6D33C461C9E590B0087B40B /* watchLight Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D33C5D1C9E590B0087B40B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D6D33C551C9E590B0087B40B /* watchLight.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D610FEF61C978ED90007A294 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = secondViewController.swift; path = ../secondViewController.swift; sourceTree = "<group>"; };
 		D617229F1C94E87400FE9985 /* Strobe Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Strobe Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61722A21C94E87400FE9985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61722A41C94E87400FE9985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +96,16 @@
 		D61722BE1C94E87400FE9985 /* Strobe LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strobe LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61722C21C94E87400FE9985 /* Strobe_LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strobe_LightUITests.swift; sourceTree = "<group>"; };
 		D61722C41C94E87400FE9985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D33C391C9E590B0087B40B /* watchLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D33C3C1C9E590B0087B40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D6D33C3E1C9E590B0087B40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D33C401C9E590B0087B40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D33C451C9E590B0087B40B /* watchLight Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchLight Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D33C4A1C9E590B0087B40B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D6D33C4C1C9E590B0087B40B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D6D33C4E1C9E590B0087B40B /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		D6D33C501C9E590B0087B40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D33C521C9E590B0087B40B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +130,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D33C421C9E590B0087B40B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +146,8 @@
 				D61722A11C94E87400FE9985 /* Strobe Light */,
 				D61722B61C94E87400FE9985 /* Strobe LightTests */,
 				D61722C11C94E87400FE9985 /* Strobe LightUITests */,
+				D6D33C3A1C9E590B0087B40B /* watchLight */,
+				D6D33C491C9E590B0087B40B /* watchLight Extension */,
 				D61722A01C94E87400FE9985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +158,8 @@
 				D617229F1C94E87400FE9985 /* Strobe Light.app */,
 				D61722B31C94E87400FE9985 /* Strobe LightTests.xctest */,
 				D61722BE1C94E87400FE9985 /* Strobe LightUITests.xctest */,
+				D6D33C391C9E590B0087B40B /* watchLight.app */,
+				D6D33C451C9E590B0087B40B /* watchLight Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +169,7 @@
 			children = (
 				D61722A21C94E87400FE9985 /* AppDelegate.swift */,
 				D61722A41C94E87400FE9985 /* ViewController.swift */,
+				D610FEF61C978ED90007A294 /* secondViewController.swift */,
 				D61722A61C94E87400FE9985 /* Main.storyboard */,
 				D61722A91C94E87400FE9985 /* Assets.xcassets */,
 				D61722AB1C94E87400FE9985 /* LaunchScreen.storyboard */,
@@ -125,6 +196,28 @@
 			path = "Strobe LightUITests";
 			sourceTree = "<group>";
 		};
+		D6D33C3A1C9E590B0087B40B /* watchLight */ = {
+			isa = PBXGroup;
+			children = (
+				D6D33C3E1C9E590B0087B40B /* Assets.xcassets */,
+				D6D33C3B1C9E590B0087B40B /* Interface.storyboard */,
+				D6D33C401C9E590B0087B40B /* Info.plist */,
+			);
+			path = watchLight;
+			sourceTree = "<group>";
+		};
+		D6D33C491C9E590B0087B40B /* watchLight Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6D33C4A1C9E590B0087B40B /* InterfaceController.swift */,
+				D6D33C4C1C9E590B0087B40B /* ExtensionDelegate.swift */,
+				D6D33C4E1C9E590B0087B40B /* GlanceController.swift */,
+				D6D33C501C9E590B0087B40B /* Assets.xcassets */,
+				D6D33C521C9E590B0087B40B /* Info.plist */,
+			);
+			path = "watchLight Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +228,12 @@
 				D617229B1C94E87400FE9985 /* Sources */,
 				D617229C1C94E87400FE9985 /* Frameworks */,
 				D617229D1C94E87400FE9985 /* Resources */,
+				D6D33C5D1C9E590B0087B40B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6D33C541C9E590B0087B40B /* PBXTargetDependency */,
 			);
 			name = "Strobe Light";
 			productName = "Strobe Light";
@@ -181,6 +276,40 @@
 			productReference = D61722BE1C94E87400FE9985 /* Strobe LightUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D6D33C381C9E590B0087B40B /* watchLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D33C5C1C9E590B0087B40B /* Build configuration list for PBXNativeTarget "watchLight" */;
+			buildPhases = (
+				D6D33C371C9E590B0087B40B /* Resources */,
+				D6D33C5B1C9E590B0087B40B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6D33C481C9E590B0087B40B /* PBXTargetDependency */,
+			);
+			name = watchLight;
+			productName = watchLight;
+			productReference = D6D33C391C9E590B0087B40B /* watchLight.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D6D33C441C9E590B0087B40B /* watchLight Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D33C5A1C9E590B0087B40B /* Build configuration list for PBXNativeTarget "watchLight Extension" */;
+			buildPhases = (
+				D6D33C411C9E590B0087B40B /* Sources */,
+				D6D33C421C9E590B0087B40B /* Frameworks */,
+				D6D33C431C9E590B0087B40B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchLight Extension";
+			productName = "watchLight Extension";
+			productReference = D6D33C451C9E590B0087B40B /* watchLight Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,7 +322,6 @@
 				TargetAttributes = {
 					D617229E1C94E87400FE9985 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = UNEZK3RXDZ;
 					};
 					D61722B21C94E87400FE9985 = {
 						CreatedOnToolsVersion = 7.3;
@@ -204,6 +332,14 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = UNEZK3RXDZ;
 						TestTargetID = D617229E1C94E87400FE9985;
+					};
+					D6D33C381C9E590B0087B40B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UNEZK3RXDZ;
+					};
+					D6D33C441C9E590B0087B40B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UNEZK3RXDZ;
 					};
 				};
 			};
@@ -223,6 +359,8 @@
 				D617229E1C94E87400FE9985 /* Strobe Light */,
 				D61722B21C94E87400FE9985 /* Strobe LightTests */,
 				D61722BD1C94E87400FE9985 /* Strobe LightUITests */,
+				D6D33C381C9E590B0087B40B /* watchLight */,
+				D6D33C441C9E590B0087B40B /* watchLight Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +390,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D33C371C9E590B0087B40B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D33C3F1C9E590B0087B40B /* Assets.xcassets in Resources */,
+				D6D33C3D1C9E590B0087B40B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D33C431C9E590B0087B40B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D33C511C9E590B0087B40B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61722A51C94E87400FE9985 /* ViewController.swift in Sources */,
+				D610FEF71C978ED90007A294 /* secondViewController.swift in Sources */,
 				D61722A31C94E87400FE9985 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +436,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D33C411C9E590B0087B40B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D33C4D1C9E590B0087B40B /* ExtensionDelegate.swift in Sources */,
+				D6D33C4B1C9E590B0087B40B /* InterfaceController.swift in Sources */,
+				D6D33C4F1C9E590B0087B40B /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +458,16 @@
 			isa = PBXTargetDependency;
 			target = D617229E1C94E87400FE9985 /* Strobe Light */;
 			targetProxy = D61722BF1C94E87400FE9985 /* PBXContainerItemProxy */;
+		};
+		D6D33C481C9E590B0087B40B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6D33C441C9E590B0087B40B /* watchLight Extension */;
+			targetProxy = D6D33C471C9E590B0087B40B /* PBXContainerItemProxy */;
+		};
+		D6D33C541C9E590B0087B40B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6D33C381C9E590B0087B40B /* watchLight */;
+			targetProxy = D6D33C531C9E590B0087B40B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +486,14 @@
 				D61722AC1C94E87400FE9985 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6D33C3B1C9E590B0087B40B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D33C3C1C9E590B0087B40B /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -404,10 +588,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Strobe Light/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -415,10 +602,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Strobe Light/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -468,6 +658,66 @@
 			};
 			name = Release;
 		};
+		D6D33C561C9E590B0087B40B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = watchLight_Extension;
+				INFOPLIST_FILE = watchLight/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D6D33C571C9E590B0087B40B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = watchLight_Extension;
+				INFOPLIST_FILE = watchLight/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		D6D33C581C9E590B0087B40B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchLight Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D6D33C591C9E590B0087B40B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchLight Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tech-with-matthew.Strobe-Light.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +737,7 @@
 				D61722C91C94E87400FE9985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D61722CA1C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe LightTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +746,7 @@
 				D61722CC1C94E87400FE9985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D61722CD1C94E87400FE9985 /* Build configuration list for PBXNativeTarget "Strobe LightUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +755,25 @@
 				D61722CF1C94E87400FE9985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D33C5A1C9E590B0087B40B /* Build configuration list for PBXNativeTarget "watchLight Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D33C581C9E590B0087B40B /* Debug */,
+				D6D33C591C9E590B0087B40B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D33C5C1C9E590B0087B40B /* Build configuration list for PBXNativeTarget "watchLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D33C561C9E590B0087B40B /* Debug */,
+				D6D33C571C9E590B0087B40B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

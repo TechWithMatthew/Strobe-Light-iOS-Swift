@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Strobe_Light" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,155 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CD-mM-D2s">
+                                <rect key="frame" x="210" y="102" width="181" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="HLj-qc-f6n"/>
+                                    <constraint firstAttribute="width" constant="181" id="iMA-sH-Ibu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="OFF">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStrobeLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BoH-oD-I4j"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.064841499999999996" minValue="0.041000000000000002" maxValue="0.94999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="8nT-ev-wmv">
+                                <rect key="frame" x="18" y="401" width="564" height="31"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="UwH-cE-aon"/>
+                                    <action selector="sliderSpeedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ogB-Kv-u85"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strobe Speed: 52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sj1-Av-Iuf">
+                                <rect key="frame" x="136" y="473" width="328" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="eyP-Lw-NcS"/>
+                                    <constraint firstAttribute="width" constant="328" id="ydJ-EJ-t8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-7t-82K">
+                                <rect key="frame" x="511" y="20" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dit-7S-ZMO"/>
+                                    <constraint firstAttribute="width" constant="69" id="iv8-n3-YeE"/>
+                                </constraints>
+                                <state key="normal" title="Fast Flash">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFastFlash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8za-qC-JcW"/>
+                                    <segue destination="YDP-aR-lCQ" kind="show" id="vGr-PT-Qq4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8nT-ev-wmv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2YA-Xz-nMD"/>
+                            <constraint firstItem="cBr-7t-82K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="44G-kQ-GPu"/>
+                            <constraint firstItem="sj1-Av-Iuf" firstAttribute="top" secondItem="8nT-ev-wmv" secondAttribute="bottom" constant="42" id="7iK-zA-Fbo"/>
+                            <constraint firstItem="cBr-7t-82K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8Rt-8h-gbK"/>
+                            <constraint firstItem="8nT-ev-wmv" firstAttribute="top" secondItem="1CD-mM-D2s" secondAttribute="bottom" constant="167" id="bTU-W0-UwK"/>
+                            <constraint firstItem="1CD-mM-D2s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dLi-Hu-d6l"/>
+                            <constraint firstItem="sj1-Av-Iuf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hHq-ox-P7X"/>
+                            <constraint firstItem="8nT-ev-wmv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iU2-Tp-9QK"/>
+                            <constraint firstItem="1CD-mM-D2s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="o6W-hb-P78"/>
+                            <constraint firstItem="8nT-ev-wmv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="puH-rH-GkH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnStrobeLightOutlet" destination="1CD-mM-D2s" id="7cy-7z-Pdg"/>
+                        <outlet property="lblSpeed" destination="sj1-Av-Iuf" id="EmC-El-r1G"/>
+                        <outlet property="slider" destination="8nT-ev-wmv" id="KBq-Gl-3JM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="624" y="631"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Jvx-N8-EQ6">
+            <objects>
+                <viewController id="YDP-aR-lCQ" customClass="secondViewController" customModule="Strobe_Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ny-ap-1Qc"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Rp-cw-m51"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="23A-t2-TMp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEN-Rh-KhL">
+                                <rect key="frame" x="495" y="20" width="85" height="30"/>
+                                <state key="normal" title="Strobe Light">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStrobeLight:" destination="YDP-aR-lCQ" eventType="touchUpInside" id="XIK-ew-bsV"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Jkl-KQ-dwN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVH-wN-CmY">
+                                <rect key="frame" x="210" y="102" width="181" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="p9k-kK-sgX"/>
+                                    <constraint firstAttribute="height" constant="132" id="qZd-RS-dqJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="68"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="OFF">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOnAction:" destination="YDP-aR-lCQ" eventType="touchUpInside" id="IBv-LZ-pUd"/>
+                                    <action selector="btnStrobeLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Lx-Lk-bH7"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4b2-rH-aro">
+                                <rect key="frame" x="20" y="359" width="560" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="f8n-Vl-P9Z"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Slow"/>
+                                    <segment title="Normal"/>
+                                    <segment title="Fast"/>
+                                    <segment title="Faster"/>
+                                    <segment title="Double"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segControlAction:" destination="YDP-aR-lCQ" eventType="valueChanged" id="jvc-wN-eq0"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4b2-rH-aro" firstAttribute="top" secondItem="ZVH-wN-CmY" secondAttribute="bottom" constant="125" id="6nL-mc-1HN"/>
+                            <constraint firstItem="4b2-rH-aro" firstAttribute="leading" secondItem="23A-t2-TMp" secondAttribute="leadingMargin" id="DXr-WL-kxY"/>
+                            <constraint firstItem="tEN-Rh-KhL" firstAttribute="trailing" secondItem="23A-t2-TMp" secondAttribute="trailingMargin" id="cKs-hC-DUp"/>
+                            <constraint firstItem="tEN-Rh-KhL" firstAttribute="top" secondItem="6Ny-ap-1Qc" secondAttribute="bottom" id="eWf-ax-djL"/>
+                            <constraint firstItem="ZVH-wN-CmY" firstAttribute="centerX" secondItem="23A-t2-TMp" secondAttribute="centerX" id="iaV-AJ-HBo"/>
+                            <constraint firstItem="ZVH-wN-CmY" firstAttribute="top" secondItem="6Ny-ap-1Qc" secondAttribute="bottom" constant="82" id="lMY-mU-omv"/>
+                            <constraint firstItem="4b2-rH-aro" firstAttribute="centerX" secondItem="23A-t2-TMp" secondAttribute="centerX" id="qCk-xp-H11"/>
+                            <constraint firstItem="4b2-rH-aro" firstAttribute="trailing" secondItem="23A-t2-TMp" secondAttribute="trailingMargin" id="zve-3R-ZfY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnOn" destination="ZVH-wN-CmY" id="aon-BA-chK"/>
+                        <outlet property="segControl" destination="4b2-rH-aro" id="vo1-ua-6gD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bL-li-DpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="631"/>
         </scene>
     </scenes>
 </document>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strobe Light" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDi-9a-J0i">
+                                <rect key="frame" x="142" y="120" width="316" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="XSG-d7-MWm"/>
+                                    <constraint firstAttribute="width" constant="316" id="ymZ-8L-W8D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matthew Purcell, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-8c-UFW">
+                                <rect key="frame" x="215" y="528" width="171" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TwC-Gq-hfT"/>
+                                    <constraint firstAttribute="width" constant="171" id="a7X-yY-Tzt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TDi-9a-J0i" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="6ZK-Rw-HOs"/>
+                            <constraint firstItem="TDi-9a-J0i" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BFb-to-2h7"/>
+                            <constraint firstItem="lLJ-8c-UFW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MGJ-rL-bYx"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lLJ-8c-UFW" secondAttribute="bottom" constant="51" id="i1E-IB-8jj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

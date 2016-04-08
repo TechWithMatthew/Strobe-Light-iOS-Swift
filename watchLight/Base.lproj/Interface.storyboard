@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchLight" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="1" alignment="center" title="Tap" id="WcF-yX-dDa">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnLightOnAction" destination="AgC-eL-Hgc" id="bk7-es-2mq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnLightOn" destination="WcF-yX-dDa" id="L7c-Ml-Ytq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="198" y="385"/>
+        </scene>
+    </scenes>
+</document>
