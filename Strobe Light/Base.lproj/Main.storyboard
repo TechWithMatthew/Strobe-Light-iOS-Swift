@@ -108,7 +108,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btnStrobeLight:" destination="YDP-aR-lCQ" eventType="touchUpInside" id="XIK-ew-bsV"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Jkl-KQ-dwN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVH-wN-CmY">

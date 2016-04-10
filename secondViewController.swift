@@ -31,8 +31,7 @@ class secondViewController: UIViewController {
    
     
     @IBAction func btnOnAction(sender: AnyObject) {
-        
-        
+   
         if lightIsOn == true {
             
             lightOff()
@@ -242,6 +241,8 @@ class secondViewController: UIViewController {
     
     @IBAction func btnStrobeLight(sender: AnyObject) {
         lightOff()
+        //Dismisses the second view controller works fine on actual device, crashes the simulator. 
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     

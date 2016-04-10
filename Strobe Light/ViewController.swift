@@ -5,7 +5,12 @@
 //  Created by Matthew on 3/12/16.
 //  Copyright © 2016 Matthew Purcell. All rights reserved.
 //
-// App Icon brought to me buy www.makeappicon.com
+//
+// Please Note: Whenever the flash light is turned on fromt the simulator
+// it just crashes. For this reason all testing needs to be done on device.
+// Also trying to switch between the view controllers will crash the simulator
+// this also works fine on device.
+//
 
 import UIKit
 import AVFoundation
@@ -33,7 +38,7 @@ class ViewController: UIViewController {
     let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     let avDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     
-    //The Magic
+    //All the Magic happens below this
     @IBAction func btnStrobeLight(sender: AnyObject) {
 
         if buttonOn == true {
@@ -54,9 +59,6 @@ class ViewController: UIViewController {
             btnStrobeLightOutlet.setTitle("ON", forState: UIControlState.Normal)
             
             theSlider()
-            
-
-            
            
         }
     }
@@ -76,14 +78,11 @@ class ViewController: UIViewController {
         
         print(slider.value)
         
-        //set value of the slider to dblTimerSpeed and convert the slider which is a float to double.
+        //set value of the slider to dblTimerSpeed and convert the slider which is a float to double. The timer only accepts double.
         dblTimerSpeed = Double(slider.value)
         print("dblTimerSpeed \(dblTimerSpeed)")
         
         if dblTimerSpeed >= 0.92 {
-            
-            // 2160 seconds will be 6 hours, more than likely longer than anyone will be using the flash light for
-            //           dblTimerSpeed = 2160
             
             timer.invalidate()
             lightShouldAlwaysBeOn = true
