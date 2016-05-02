@@ -10,10 +10,13 @@
 // it just crashes. For this reason all testing needs to be done on device.
 // Also trying to switch between the view controllers will crash the simulator
 // this also works fine on device.
-//
+
 
 import UIKit
 import AVFoundation
+
+let count = NSUserDefaults.standardUserDefaults()
+
 class ViewController: UIViewController {
    
     //The Master File
@@ -22,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnStrobeLightOutlet: UIButton!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var lblSpeed: UILabel!
+    
     
     //Variables
     var strobeOn = false
@@ -34,13 +38,15 @@ class ViewController: UIViewController {
     var intStrobeSpeed:Int = 0
     var sliderRange:Float = 0.897
     
+    
+    
     //This is needed to make all the flash light stuff work
     let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     let avDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     
     //All the Magic happens below this
     @IBAction func btnStrobeLight(sender: AnyObject) {
-
+        
         if buttonOn == true {
             
             timer.invalidate()
@@ -87,6 +93,7 @@ class ViewController: UIViewController {
             timer.invalidate()
             lightShouldAlwaysBeOn = true
             lightAlwaysOn()
+            
         }
             
         else {
@@ -120,6 +127,8 @@ class ViewController: UIViewController {
                     
                     try device.setTorchModeOnWithLevel(1.0)
                     strobeOn =  true
+                    setCount(getCount() + 1)
+                    print(getCount())
                     
                     if buttonOn == false {
                         device.torchMode = AVCaptureTorchMode.Off
@@ -139,14 +148,17 @@ class ViewController: UIViewController {
     
     func lightAlwaysOn() {
         
-        lightShouldAlwaysBeOff = false 
+        lightShouldAlwaysBeOff = false
+        buttonOn = true
+        btnStrobeLightOutlet.setTitle("ON", forState: UIControlState.Normal)
         if (device.hasTorch){
             do {
                 try device.lockForConfiguration()
                 
                 if lightShouldAlwaysBeOn == true {
                     device.torchMode = AVCaptureTorchMode.On
-        }
+                    
+                    }
                 else {
                     device.torchMode = AVCaptureTorchMode.Off
                 }
@@ -216,7 +228,24 @@ class ViewController: UIViewController {
         
     }
     
+
+    @IBAction func btnAbout(sender: AnyObject) {
+       
+        timer.invalidate()
+        btnStrobeLightOutlet.setTitle("OFF", forState: UIControlState.Normal)
+        buttonOn = false
+        lightShouldAlwaysBeOff = true
+        lightShouldBeOff()
+    }
+
+    func setCount(theCount: Int) {
+        count.setInteger(theCount, forKey: "Flash Count")
+    }
     
+    func getCount() -> Int {
+        return count.integerForKey("Flash Count")
+    }
+
     
     //Makes status bar white
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

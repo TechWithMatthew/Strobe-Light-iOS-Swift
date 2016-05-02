@@ -1,10 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
+        <!--About View Controller-->
+        <scene sceneID="g7N-Sb-fUS">
+            <objects>
+                <viewController storyboardIdentifier="about" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Afg-W0-ejK" customClass="AboutViewController" customModule="Strobe_Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="muW-XP-SOx"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Yd-0w-YCz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zCF-QF-cXf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMV-G4-ehD">
+                                <rect key="frame" x="236" y="28" width="128" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="2XS-L0-Hyd"/>
+                                    <constraint firstAttribute="height" constant="44" id="LfX-NS-gG7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pag-5Q-mM3">
+                                <rect key="frame" x="20" y="28" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="euO-gt-hLN"/>
+                                    <constraint firstAttribute="height" constant="30" id="yxR-08-OG0"/>
+                                </constraints>
+                                <state key="normal" title="Strobe Light">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAboutAction:" destination="Afg-W0-ejK" eventType="touchUpInside" id="TFd-j7-H1Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H70-lr-9aw">
+                                <rect key="frame" x="20" y="550" width="262" height="30"/>
+                                <state key="normal" title="Tap Here to check out my video series">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNoobProgrammingURL:" destination="Afg-W0-ejK" eventType="touchUpInside" id="EqT-dD-Osx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-KQ-Rx5">
+                                <rect key="frame" x="20" y="517" width="256" height="30"/>
+                                <state key="normal" title="Tap Here to check out GitHub Project">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGitHubURL:" destination="Afg-W0-ejK" eventType="touchUpInside" id="mRE-gK-1q8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Light Flashes: 0000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn1-6D-1S7">
+                                <rect key="frame" x="20" y="488" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="iVF-Oj-RaN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="38" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HE-oI-DMJ">
+                                <rect key="frame" x="20" y="80" width="560" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="eii-hp-3ym"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="sB1-dv-3Ll"/>
+                                </constraints>
+                                <mutableString key="text">This is a Strobe Light app I created for two reasons, one I thought it would be a great way to learn more swift, and more about Xcode which proved to be true. The second reasons is I really like strobe lights and thought I could do something really cool with one and then have it on my phone. So what I have done is create a strobe light that is extremely customizable. You can move the slide to pick how long you would like the light on/light off to be. Also Fast Flash is a feature I built in because I its unique and it gives the light more of an emergency vehicle feel which I think is kinda cool.
+
+I love this app a lot, it's really an app that I enjoy so I made it available on GitHub as well. This was also done for two reasons, one I want more people to try out my cool app and be able to make it their own. Second reason is I want people to use my app and my code to learn something. 
+
+If you want to learn even more I have created a YouTube video series built for teaching people swift, you can check that out below.
+
+Sincerely,
+Matthew Purcell</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="13.5"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Yd-0w-YCz" firstAttribute="top" secondItem="H70-lr-9aw" secondAttribute="bottom" constant="20" id="2RE-f5-PAZ"/>
+                            <constraint firstItem="Pag-5Q-mM3" firstAttribute="top" secondItem="muW-XP-SOx" secondAttribute="bottom" constant="8" id="5YA-wN-Lwz"/>
+                            <constraint firstItem="zMV-G4-ehD" firstAttribute="centerX" secondItem="zCF-QF-cXf" secondAttribute="centerX" id="7O1-oJ-9Bi"/>
+                            <constraint firstItem="2HE-oI-DMJ" firstAttribute="top" secondItem="zMV-G4-ehD" secondAttribute="bottom" constant="8" id="9hs-4w-GHX"/>
+                            <constraint firstItem="H70-lr-9aw" firstAttribute="top" secondItem="LtT-KQ-Rx5" secondAttribute="bottom" constant="3" id="9pm-TX-enB"/>
+                            <constraint firstItem="fn1-6D-1S7" firstAttribute="trailing" secondItem="zCF-QF-cXf" secondAttribute="trailingMargin" id="DXx-2G-e0j"/>
+                            <constraint firstItem="fn1-6D-1S7" firstAttribute="leading" secondItem="zCF-QF-cXf" secondAttribute="leadingMargin" id="Ebw-Oc-58C"/>
+                            <constraint firstItem="LtT-KQ-Rx5" firstAttribute="top" secondItem="fn1-6D-1S7" secondAttribute="bottom" constant="8" id="MVM-1t-FhB"/>
+                            <constraint firstItem="2HE-oI-DMJ" firstAttribute="leading" secondItem="zCF-QF-cXf" secondAttribute="leadingMargin" id="N5c-UJ-lAT"/>
+                            <constraint firstItem="2HE-oI-DMJ" firstAttribute="trailing" secondItem="zCF-QF-cXf" secondAttribute="trailingMargin" id="NBW-sF-phu"/>
+                            <constraint firstItem="2HE-oI-DMJ" firstAttribute="top" secondItem="zMV-G4-ehD" secondAttribute="bottom" constant="8" id="Y4v-Ks-j4k"/>
+                            <constraint firstItem="2HE-oI-DMJ" firstAttribute="trailing" secondItem="zCF-QF-cXf" secondAttribute="trailingMargin" id="f0s-sB-KQ4"/>
+                            <constraint firstItem="2HE-oI-DMJ" firstAttribute="leading" secondItem="zCF-QF-cXf" secondAttribute="leadingMargin" id="l06-us-yfE"/>
+                            <constraint firstItem="Pag-5Q-mM3" firstAttribute="leading" secondItem="zCF-QF-cXf" secondAttribute="leadingMargin" id="rSw-lD-WyN"/>
+                            <constraint firstItem="H70-lr-9aw" firstAttribute="leading" secondItem="zCF-QF-cXf" secondAttribute="leadingMargin" id="rq3-7g-BDF"/>
+                            <constraint firstItem="LtT-KQ-Rx5" firstAttribute="leading" secondItem="zCF-QF-cXf" secondAttribute="leadingMargin" id="sbY-bl-rV3"/>
+                            <constraint firstItem="zMV-G4-ehD" firstAttribute="top" secondItem="muW-XP-SOx" secondAttribute="bottom" constant="8" id="wav-Uy-i1e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblAbout" destination="2HE-oI-DMJ" id="JRK-Jv-44o"/>
+                        <outlet property="lblCount" destination="fn1-6D-1S7" id="ASF-NQ-gUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHf-g9-E7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="-54"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -64,6 +177,23 @@
                                     <segue destination="YDP-aR-lCQ" kind="show" id="vGr-PT-Qq4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-wG-xc3">
+                                <rect key="frame" x="20" y="20" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fCH-wl-1XA"/>
+                                    <constraint firstAttribute="width" constant="42" id="iCU-wB-27A"/>
+                                </constraints>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAbout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RX2-u8-bi2"/>
+                                    <segue destination="Afg-W0-ejK" kind="show" id="nSU-9o-ZOd">
+                                        <segue key="commit" inheritsFrom="parent" id="mLE-pI-DVj"/>
+                                        <segue key="preview" inheritsFrom="commit" id="l1u-yK-The"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -71,10 +201,12 @@
                             <constraint firstItem="cBr-7t-82K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="44G-kQ-GPu"/>
                             <constraint firstItem="sj1-Av-Iuf" firstAttribute="top" secondItem="8nT-ev-wmv" secondAttribute="bottom" constant="42" id="7iK-zA-Fbo"/>
                             <constraint firstItem="cBr-7t-82K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8Rt-8h-gbK"/>
+                            <constraint firstItem="l9i-wG-xc3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EIf-qc-ajA"/>
                             <constraint firstItem="8nT-ev-wmv" firstAttribute="top" secondItem="1CD-mM-D2s" secondAttribute="bottom" constant="167" id="bTU-W0-UwK"/>
                             <constraint firstItem="1CD-mM-D2s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dLi-Hu-d6l"/>
                             <constraint firstItem="sj1-Av-Iuf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hHq-ox-P7X"/>
                             <constraint firstItem="8nT-ev-wmv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iU2-Tp-9QK"/>
+                            <constraint firstItem="l9i-wG-xc3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="j5l-0w-j6P"/>
                             <constraint firstItem="1CD-mM-D2s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="o6W-hb-P78"/>
                             <constraint firstItem="8nT-ev-wmv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="puH-rH-GkH"/>
                         </constraints>
@@ -92,7 +224,7 @@
         <!--Second View Controller-->
         <scene sceneID="Jvx-N8-EQ6">
             <objects>
-                <viewController id="YDP-aR-lCQ" customClass="secondViewController" customModule="Strobe_Light" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fastFlash" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YDP-aR-lCQ" customClass="secondViewController" customModule="Strobe_Light" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Ny-ap-1Qc"/>
                         <viewControllerLayoutGuide type="bottom" id="0Rp-cw-m51"/>
@@ -166,4 +298,7 @@
             <point key="canvasLocation" x="1380" y="631"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nSU-9o-ZOd"/>
+    </inferredMetricsTieBreakers>
 </document>

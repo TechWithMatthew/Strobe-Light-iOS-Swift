@@ -20,17 +20,34 @@ class InterfaceController: WKInterfaceController {
     
     var lightOn = false
     
+    func playHaptic(Click_ type: WKHapticType) {
+       
+        enum WKHapticType : Int {
+            case Notification
+            case DirectionUp
+            case DirectionDown
+            case Success
+            case Failure
+            case Retry
+            case Start
+            case Stop
+            case Click
+        }
+    }
     @IBAction func btnLightOnAction() {
   
         if lightOn == false {
             btnLightOn.setBackgroundColor(UIColor.whiteColor())
             lightOn = true
+            WKInterfaceDevice.currentDevice().playHaptic(WKHapticType.Click)
         }
         else {
             btnLightOn.setBackgroundColor(UIColor.blackColor())
             lightOn = false
         }
     }
+    
+
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -46,6 +63,7 @@ class InterfaceController: WKInterfaceController {
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+        btnLightOn.setBackgroundColor(UIColor.blackColor())
         super.didDeactivate()
     }
 

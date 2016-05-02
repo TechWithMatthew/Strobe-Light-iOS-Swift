@@ -131,6 +131,8 @@ class secondViewController: UIViewController {
                     
                         try device.setTorchModeOnWithLevel(1.0)
                     
+                        setCount((getCount()) + 1)
+                        
                         device.unlockForConfiguration()
                     
                     } catch {
@@ -149,6 +151,8 @@ class secondViewController: UIViewController {
                             try device.lockForConfiguration()
                             
                             try device.setTorchModeOnWithLevel(1.0)
+                            
+                            setCount((getCount()) + 1)
                             
                             device.unlockForConfiguration()
                             
@@ -170,6 +174,8 @@ class secondViewController: UIViewController {
         
                 try device.setTorchModeOnWithLevel(1.0)
                
+                setCount((getCount()) + 1)
+                
                 device.unlockForConfiguration()
                 
             } catch {
@@ -245,6 +251,14 @@ class secondViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    func setCount(theCount: Int) {
+        count.setInteger(theCount, forKey: "Flash Count")
+    }
+    
+    func getCount() -> Int {
+        return count.integerForKey("Flash Count")
+    }
+
     
     //Makes status bar white
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

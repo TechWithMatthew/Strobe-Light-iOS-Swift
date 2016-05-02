@@ -1,28 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10115" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Flashlight-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchLight" customModuleProvider="target">
+                <controller identifier="flashController" title="Flashlight" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchLight" customModuleProvider="target">
                     <items>
-                        <button width="1" height="1" alignment="center" title="Tap" id="WcF-yX-dDa">
+                        <button width="1" height="1" alignment="center" title="Tap for Light" id="WcF-yX-dDa">
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="btnLightOnAction" destination="AgC-eL-Hgc" id="bk7-es-2mq"/>
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="o7j-JW-2zI"/>
                     <connections>
                         <outlet property="btnLightOn" destination="WcF-yX-dDa" id="L7c-Ml-Ytq"/>
+                        <segue destination="1nO-nH-2e8" kind="relationship" relationship="nextPage" id="8Fe-9M-OP5"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="198" y="385"/>
+            <point key="canvasLocation" x="106" y="382"/>
+        </scene>
+        <!--Strobe Light-->
+        <scene sceneID="oSR-op-h7M">
+            <objects>
+                <controller identifier="strobeController" title="Strobe Light" id="1nO-nH-2e8" customClass="SecondInterfaceController" customModule="watchLight_Extension">
+                    <items>
+                        <button width="1" height="1" alignment="center" title="Tap for Strobe" id="swe-rU-F4Y">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnStrobeAction" destination="1nO-nH-2e8" id="i6T-hq-2fX"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="wa8-8a-pvl">
+                        <items>
+                            <menuItem title="Fast" icon="more" id="gqq-8A-Rcd">
+                                <connections>
+                                    <action selector="btnFast" destination="1nO-nH-2e8" id="kHB-1E-qv2"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Normal" icon="more" id="exr-Ux-XYm">
+                                <connections>
+                                    <action selector="btnNormal" destination="1nO-nH-2e8" id="cKx-qJ-b4G"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Slow" icon="more" id="3Sc-lf-jh3">
+                                <connections>
+                                    <action selector="btnSlow" destination="1nO-nH-2e8" id="de1-E6-n3i"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="btnStrobe" destination="swe-rU-F4Y" id="qVR-Pv-nUz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="407" y="382"/>
         </scene>
     </scenes>
 </document>

@@ -43,5 +43,24 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Faster flash of light</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Fast Flash</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).fastFlash</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Learn more about the app</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>About</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).about</string>
+		</dict>
+	</array>
 </dict>
 </plist>
